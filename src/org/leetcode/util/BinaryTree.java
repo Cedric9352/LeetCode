@@ -6,6 +6,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayDeque;
 import org.leetcode.medium.InorderTraversal;
+import org.leetcode.medium.PostorderTraversal;
 import org.leetcode.medium.PreorderTraversal;
 
 public class BinaryTree {
@@ -36,9 +37,11 @@ public class BinaryTree {
 	public static void main(String[] args) throws IOException
 	{
 		BinaryTree tree = new BinaryTree(System.in);
-		InorderTraversal i = new InorderTraversal();
-		PreorderTraversal p = new PreorderTraversal();
-		i.inorderTravelsal(tree.root);
-		p.preorderTravelsal(tree.root);
+		InorderTraversal in = new InorderTraversal();
+		PreorderTraversal pre = new PreorderTraversal();
+		PostorderTraversal post = new PostorderTraversal();
+		in.inorderTravelsal(tree.root);
+		pre.preorderTravelsal(tree.root);
+		post.postorderTraversal(tree.root);
 	}
 }
