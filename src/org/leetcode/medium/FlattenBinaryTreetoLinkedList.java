@@ -23,6 +23,7 @@ public class FlattenBinaryTreetoLinkedList {
     {
     	if(pNode != null)
     		pNode.left = root;
+    	//pass to next TreeNode in preorder
     	pNode = root;
         if(root.left != null)
         	pNode = core(root.left, pNode);
